@@ -39,6 +39,6 @@ def test_salaries():
     view_more_categories = "//div[contains(@class,'col-sm-13')]//a[contains(text(),'View More Categories')]"
     wait.until(EC.visibility_of_element_located((By.XPATH,view_more_categories)))
     driver.find_element_by_xpath(view_more_categories).click()
-    wait.until(EC.title_is("Salaries by Job Category | GulfTalent"))
+    wait.until(EC.title_is(view_more_categories_page_title))
     time.sleep(3)
-    assert driver.title == "Salaries by Job Category | GulfTalent"
+    assert driver.title == view_more_categories_page_title
