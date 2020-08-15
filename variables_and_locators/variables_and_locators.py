@@ -7,3 +7,4 @@ search_button = "//button[@class='btn btn-lg btn-primary btn-corner']"
 
 jobs = ["tester","designer","developer"]
 expected_title = "Job opportunities in the Middle East - GulfTalent"
+view_more_categories_page_title = "Salaries by Job Category | GulfTalent"
